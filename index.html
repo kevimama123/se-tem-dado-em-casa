@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<style>
+       /* 1º button é pros dados  */
+       button{
+        border: 5px solid black;
+        height: 40pt;
+        padding-left: 10px;
+        padding-right: 30px;
+        width: 60pt;
+        margin: 30px 5px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        }
+
+        button{
+        border: 5px solid rgb(174, 18, 18);
+        height: 40pt;
+        padding-left: 10px;
+        padding-right: 30px;
+        width: 60pt;
+        margin: 30px 5px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        }
+       
+        input[type=number],input[type=text] {
+        border: 2px solid black;
+        height: 16pt;
+        border-radius: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 24pt;
+        }
+
+        input[type=text] {
+        width: 144pt;
+        }
+
+        label, body {
+        font-family: sans-serif;
+        font-size: 14pt;
+        color: black;
+        font-weight: bold;
+        }
+
+        input[disabled] {
+        background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Ficha de RPG
+    </h2>
+    <p>
+    <label>Nome:</label>
+    <input type=text id="nome" />
+    <label>Nível:</label>
+    <input type=number id="nivel" />
+    </p>
+    
+    <p>
+    <label>Força:</label>
+    <input type=number id="forca" />
+    <label>Poder de Ataque:</label>
+    <input type=number id="poder" disabled />
+    </p>
+    
+    <p>
+    <label>Agilidade:</label>
+    <input type=number id="agilidade" />
+    <label>Armadura:</label>
+    <input type=number id="armadura" />
+    <label>Defesa:</label>
+    <input type=number id="defesa" disabled />
+        
+    
+    <!-- Botões De Rolar Os Dados -->
+
+    <button name="button" id = "D4D" >d4</button>
+    <button name="button" id = "D6D">d6</button>
+
+
+
+    <button name="button" id = "D8D">d8</button>
+    <button name="button" id = "D10D">d10</button>
+    <button name="button" id = "D20D">d20</button>
+    <button name="button" id = "D100D">d100</button>
+    <button name="button" id = "D1000D">d1000</button>
+
+    <!-- Tela Dos Dados -->
+
+    <input name="TelaD" id = "D4T">d4</input>
+
+    <input name="TelaD" value="1" min="1" id = "D6T">d6</input>
+    <button onclick="RolarD6()">D6</button>
+    <div id = "D6resultado">
+    <div id = "D6Images">    
+
+    <input name="TelaD" id = "D8T">d8</input>
+
+    <input name="TelaD" id = "D10T">d10</input>
+    
+    <input name="TelaD" id = "D20T">d20</input>
+    
+    <input name="TelaD" id = "D100T">d100</input>
+    
+    <input name="TelaD" id = "D1000T">d1000</input>
+
+
+    
+    
+    <script src="coco.js"></script>
+</p>        
+</body>
+</html>
+</body>
+</html>
